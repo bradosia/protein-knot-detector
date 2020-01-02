@@ -114,6 +114,8 @@
                                     <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKMath"/>
                                     									
                                     <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="ws2_32"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="stdc++fs"/>
                                     								
                                 </option>
                                 								
