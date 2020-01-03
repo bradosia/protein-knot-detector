@@ -95,7 +95,25 @@
                                     									
                                     <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKXSBase"/>
                                     									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKXCAF"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKV3d"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKService"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKCAF"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKBO"/>
+                                    									
                                     <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKShHealing"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKVCAF"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKMesh"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKHLR"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKPrim"/>
                                     									
                                     <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKTopAlgo"/>
                                     									
@@ -108,6 +126,10 @@
                                     <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKG3d"/>
                                     									
                                     <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKG2d"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKLCAF"/>
+                                    									
+                                    <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKCDF"/>
                                     									
                                     <listOptionValue builtIn="false" srcPrefixMapping="" srcRootPath="" value="TKernel"/>
                                     									

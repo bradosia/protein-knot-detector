@@ -48,6 +48,7 @@
 #include <Interface_Static.hxx>
 #include <TopoDS_Edge.hxx>
 #include <BRepBuilderAPI_MakeEdge.hxx>
+#include <XCAFDoc_ColorTool.hxx>
 
 /*
  * PKA = Protein Knot Analyzer
@@ -139,8 +140,8 @@ std::unique_ptr<PKD::DoubleMatrix> MMDBAndCarbonAlphaMatrix::toMatrix() {
 	for (ir = 0; ir < nResidues; ir++) {
 		if (residueTable[ir]) {
 			residueTable[ir]->GetAtomTable(atomTable, nAtoms);
-			printf("Total Atoms In Residue#%d Chain#%s Model#%d: %d\n", ir,
-					chainId_, modelId_, nAtoms);
+			/*printf("Total Atoms In Residue#%d Chain#%s Model#%d: %d\n", ir,
+					chainId_, modelId_, nAtoms);*/
 			for (ia = 0; ia < nAtoms; ia++) {
 				// atom exists
 				if (atomTable[ia]) {
@@ -256,7 +257,7 @@ std::unique_ptr<CMMDBManager> MMDBAndCarbonAlphaMatrix::toMMDB() {
 						bondReturn1 = atom->AddBond(atomLast, 1);
 						bondReturn2 = atomLast->AddBond(atom, 1);
 						if (bondReturn1 && bondReturn2) {
-							printf("OK #%d %f\n", ir, atom->x);
+							/*printf("OK #%d %f\n", ir, atom->x);*/
 						} else {
 							printf("ERROR #%d %f\n", ir, atom->x);
 						}
@@ -283,6 +284,9 @@ int OCCT_Shape::writeSTEP(char* path) {
 
 	// Write file
 	STEPControl_StepModelType mode = STEPControl_AsIs;
+	//XCAFDoc_ColorTool colorTool;
+	//opencascade::handle<XSControl_WorkSession> WS;
+	//writer.SetWS(WS,false);
 	IFSelect_ReturnStatus stat1 = writer.Transfer(*shape_, mode);
 	IFSelect_ReturnStatus stat2 = writer.Write(path);
 	return 0;
