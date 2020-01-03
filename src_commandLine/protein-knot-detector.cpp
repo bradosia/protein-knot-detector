@@ -146,10 +146,10 @@ int main(int argc, char **argv) {
 			//RC = MMDBExport->WriteMMDBF("out1.bin");
 			printf("Running Taylor Knot Algorithm...\n");
 			TaylorKnotAlgorithm taylorAlgorithm;
-			for (int i = 1; i <= 50; i++) {
+			for (int i = 1; i <= 20; i++) {
 				taylorAlgorithm.setMatrix(std::move(carbonAlphaMatrix));
 				printf("Running Taylor Knot Algorithm: Smooth #%d\n", i);
-				taylorAlgorithm.smooth(100);
+				taylorAlgorithm.smooth(50);
 				carbonAlphaMatrix = taylorAlgorithm.getMatrix();
 				printf("Converting matrix to OCCT Shape...\n");
 				shapeConverter.setMatrix(std::move(carbonAlphaMatrix));
